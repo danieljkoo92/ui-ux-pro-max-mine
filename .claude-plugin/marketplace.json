@@ -1,0 +1,35 @@
+{
+  "name": "ui-ux-pro-max-mine",
+  "id": "ui-ux-pro-max-mine",
+  "owner": {
+    "name": "danieljkoo92"
+  },
+  "metadata": {
+    "description": "Personal trimmed fork of ui-ux-pro-max-skill — dev-focused UI/UX intelligence, marketing/brand skills removed",
+    "version": "2.13.0-dk.1"
+  },
+  "plugins": [
+    {
+      "name": "ui-ux-pro-max",
+      "source": "./",
+      "description": "UI/UX design intelligence for software development. Searchable databases of styles, colors, typography, charts, and UX guidelines across 22 stacks, plus shadcn/ui + Tailwind implementation and design token architecture.",
+      "version": "2.13.0-dk.1",
+      "author": {
+        "name": "danieljkoo92"
+      },
+      "keywords": [
+        "ui",
+        "ux",
+        "design",
+        "styles",
+        "typography",
+        "color-palette",
+        "accessibility",
+        "charts",
+        "components"
+      ],
+      "category": "design",
+      "strict": false
+    }
+  ]
+}

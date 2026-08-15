@@ -1,0 +1,21 @@
+{
+  "name": "ui-ux-pro-max",
+  "description": "UI/UX design intelligence for software development. Searchable local database of styles, product palettes, font pairings, UX guidelines, charts, and 22 technology stacks, plus shadcn/ui + Tailwind implementation guidance and three-layer design token architecture. Use when designing, building, or reviewing UI: pages, components, color schemes, typography, layout, accessibility, animation, or data visualization.",
+  "version": "2.13.0-dk.1",
+  "author": {
+    "name": "danieljkoo92"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "ux",
+    "design",
+    "styles",
+    "typography",
+    "color-palette",
+    "accessibility",
+    "charts",
+    "components"
+  ],
+  "skills": "./.claude/skills/"
+}
