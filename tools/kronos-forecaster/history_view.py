@@ -66,7 +66,19 @@ def one_ticker(ticker, h):
 
     steps = sorted(set([1, 5, 10, 20, 30, 45, 60, h]))
     steps = [s for s in steps if s <= h]
-    qs = {s: quantiles(df, s, cls, ticker) for s in steps}
+    qs = {}
+    for s_ in steps:
+        if VERSION == 2 and h > 45:
+            # blend the 30-day and 90-day settings so each fan widens evenly (same as the live forecast)
+            q30 = range_v2.quantiles(df, ticker, s_, settings_h=30)[0]
+            if s_ <= 30 or s_ == h:
+                qs[s_] = q30 if s_ <= 30 else quantiles(df, s_, cls, ticker)
+                continue
+            q90 = range_v2.quantiles(df, ticker, s_, settings_h=90)[0]
+            w = min(1.0, max(0.0, (s_ - 30) / max(h - 30, 1)))
+            qs[s_] = (1 - w) * q30 + w * q90
+        else:
+            qs[s_] = quantiles(df, s_, cls, ticker)
     hs = held_series(df, h, cls, ticker)
 
     first = int(np.argmax(hs["ok"].values))

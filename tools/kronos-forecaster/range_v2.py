@@ -115,13 +115,28 @@ def _stretch(Q, outer, inner):
     return out
 
 
-def quantiles(df, ticker, h, stage="final"):
+def fan(df, ticker, steps, H):
+    """Range edges at each look-ahead in steps, for the last day, blending the 30-day and 90-day settings
+    smoothly so the fan widens evenly instead of jumping where one set of settings hands over to the other."""
+    out = {}
+    for s in steps:
+        if H <= 45 or s <= 30:
+            out[s] = quantiles(df, ticker, s, settings_h=30 if H > 45 else None)[0].iloc[-1]
+            continue
+        q30 = quantiles(df, ticker, s, settings_h=30)[0].iloc[-1]
+        q90 = quantiles(df, ticker, s, settings_h=90)[0].iloc[-1]
+        w = min(1.0, max(0.0, (s - 30) / max(H - 30, 1)))
+        out[s] = (1 - w) * q30 + w * q90
+    return out
+
+
+def quantiles(df, ticker, h, stage="final", settings_h=None):
     """Five range edges (10%, 25%, 50%, 75%, 90%) of the h-day log return, for every day in df.
 
     stage="raw" stops before any stretching (what the calibration scripts fit on); "final" is the live range.
     Returns (DataFrame with columns rm.QS, dict describing the method)."""
     cls = md.asset_class(ticker)
-    key = key_for(cls, h)
+    key = key_for(cls, settings_h or h)
     p = PARAMS[key]
     c = df["close"]
     dates = pd.DatetimeIndex(df["timestamps"])

@@ -100,8 +100,10 @@ in_sample_note = "" if "recalibrated_monthly_years" in info else " (its final st
 steps = sorted(set([1, 5, 10, 20, 30, 45, 60, 90, H]))
 steps = [s for s in steps if s <= H]
 fan = {}
+fan_q = range_v2.fan(df, TICKER, [x for x in steps if x != H], H)
+fan_q[H] = q_now
 for s in steps:
-    qs = q_now if s == H else range_v2.quantiles(df, TICKER, s)[0].iloc[-1]
+    qs = fan_q[s]
     if qs.isna().any():
         _, _, kws = method_for(s)
         qs = rm.forecast(c, s, vol_name=kws["vol_name"], method="normal").iloc[-1]
