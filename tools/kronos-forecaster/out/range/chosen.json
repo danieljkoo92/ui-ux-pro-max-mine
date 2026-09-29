@@ -1,0 +1,10 @@
+{
+  "crypto_30": "mix/blend_60_250",
+  "crypto_90": "mix/v60",
+  "fund_30": "mix/blend3",
+  "fund_90": "mix/blend_60_250",
+  "stock_30": "mix/blend_60_250",
+  "stock_90": "mix_own_center/blend_60_250",
+  "commodity_30": "normal/blend3",
+  "commodity_90": "normal/blend3"
+}

@@ -1,0 +1,66 @@
+{
+  "all_30_holdout": {
+    "touch_vs_end_down": 1.932,
+    "touch_vs_end_up": 1.487
+  },
+  "all_30_tune": {
+    "touch_vs_end_down": 1.944,
+    "touch_vs_end_up": 1.533
+  },
+  "all_90_holdout": {
+    "touch_vs_end_down": 2.412,
+    "touch_vs_end_up": 1.549
+  },
+  "all_90_tune": {
+    "touch_vs_end_down": 2.361,
+    "touch_vs_end_up": 1.528
+  },
+  "crypto_30_holdout": {
+    "touch_vs_end_down": 1.575,
+    "touch_vs_end_up": 1.32
+  },
+  "fund_30_holdout": {
+    "touch_vs_end_down": 2.062,
+    "touch_vs_end_up": 1.493
+  },
+  "stock_30_holdout": {
+    "touch_vs_end_down": 1.976,
+    "touch_vs_end_up": 1.514
+  },
+  "crypto_30_tune": {
+    "touch_vs_end_down": 1.796,
+    "touch_vs_end_up": 1.271
+  },
+  "fund_30_tune": {
+    "touch_vs_end_down": 2.069,
+    "touch_vs_end_up": 1.549
+  },
+  "stock_30_tune": {
+    "touch_vs_end_down": 1.919,
+    "touch_vs_end_up": 1.534
+  },
+  "crypto_90_holdout": {
+    "touch_vs_end_down": 1.826,
+    "touch_vs_end_up": 1.391
+  },
+  "fund_90_holdout": {
+    "touch_vs_end_down": 2.509,
+    "touch_vs_end_up": 1.58
+  },
+  "stock_90_holdout": {
+    "touch_vs_end_down": 2.504,
+    "touch_vs_end_up": 1.575
+  },
+  "crypto_90_tune": {
+    "touch_vs_end_down": 2.282,
+    "touch_vs_end_up": 1.352
+  },
+  "fund_90_tune": {
+    "touch_vs_end_down": 2.387,
+    "touch_vs_end_up": 1.568
+  },
+  "stock_90_tune": {
+    "touch_vs_end_down": 2.357,
+    "touch_vs_end_up": 1.523
+  }
+}

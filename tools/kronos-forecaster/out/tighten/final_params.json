@@ -1,0 +1,262 @@
+{
+  "stock_30": {
+    "candidate": "regime",
+    "calibration_all_years": {
+      "outer": 1.042444984880026,
+      "inner": 1.0453553524691657
+    },
+    "fit": {
+      "shape": "empirical",
+      "scale": 0.98,
+      "shape_z": [
+        -0.9212638144081793,
+        -0.35341299504523915,
+        0.18808817949485424,
+        0.6735248995575718,
+        1.0981886168606039
+      ],
+      "regime_power": 0.5
+    },
+    "hist_measure": "ohlc",
+    "vol_name": "blend_60_250",
+    "evidence_holdout": {
+      "tune_held80": 0.8000005397804713,
+      "tune_held50": 0.5000013494511782,
+      "tune_width80_pct": 24.96441944638195,
+      "holdout_held80": 0.7740292159268048,
+      "holdout_held50": 0.4708563898456709,
+      "holdout_width80_pct": 25.320983614403982,
+      "worst_year": 2008,
+      "worst_year_held80": 0.7295373665480427,
+      "held80_2008": 0.7295373665480427,
+      "held80_2020": 0.7717900850445966,
+      "holdout_worst_year_held80": 0.7355947387710225,
+      "years_below_70pct": 0
+    }
+  },
+  "stock_90": {
+    "candidate": "regime",
+    "calibration_all_years": {
+      "outer": 1.0595786066794441,
+      "inner": 1.0650269181877605
+    },
+    "fit": {
+      "shape": "empirical",
+      "scale": 0.96,
+      "shape_z": [
+        -0.8156830091749989,
+        -0.23585737891092529,
+        0.2990040614741367,
+        0.7695350043765099,
+        1.184360083860548
+      ],
+      "regime_power": 0.5
+    },
+    "hist_measure": "ohlc",
+    "vol_name": "blend_60_250",
+    "evidence_holdout": {
+      "tune_held80": 0.7999983555201079,
+      "tune_held50": 0.5000013703999101,
+      "tune_width80_pct": 45.072523039590166,
+      "holdout_held80": 0.7817086461278027,
+      "holdout_held50": 0.47567256573524447,
+      "holdout_width80_pct": 45.04112436128773,
+      "worst_year": 2008,
+      "worst_year_held80": 0.6352069419392581,
+      "held80_2008": 0.6352069419392581,
+      "held80_2020": 0.815639908732628,
+      "holdout_worst_year_held80": 0.7031392741466655,
+      "years_below_70pct": 1
+    }
+  },
+  "fund_30": {
+    "candidate": "regime",
+    "calibration_all_years": {
+      "outer": 1.0555645593920429,
+      "inner": 1.054244808620302
+    },
+    "fit": {
+      "shape": "empirical",
+      "scale": 0.96,
+      "shape_z": [
+        -0.9480314910656031,
+        -0.31668399494760346,
+        0.2461314296998891,
+        0.7004355555316026,
+        1.031829948127896
+      ],
+      "regime_power": 0.75
+    },
+    "hist_measure": "close",
+    "vol_name": "blend3",
+    "evidence_holdout": {
+      "tune_held80": 0.7999702779016199,
+      "tune_held50": 0.4999752315846832,
+      "tune_width80_pct": 14.436517852545052,
+      "holdout_held80": 0.7889658304007265,
+      "holdout_held50": 0.4866613690543762,
+      "holdout_width80_pct": 14.942828744581856,
+      "worst_year": 2023,
+      "worst_year_held80": 0.6991304347826087,
+      "held80_2008": 0.75,
+      "held80_2020": 0.7675628794449263,
+      "holdout_worst_year_held80": 0.6991304347826087,
+      "years_below_70pct": 1
+    }
+  },
+  "fund_90": {
+    "candidate": "regime",
+    "calibration_all_years": {
+      "outer": 1.0469266002162656,
+      "inner": 1.0450020866039909
+    },
+    "fit": {
+      "shape": "empirical",
+      "scale": 0.96,
+      "shape_z": [
+        -0.7880236505829781,
+        -0.17550110251836126,
+        0.3653141707932825,
+        0.7814936064049154,
+        1.0960777676043028
+      ],
+      "regime_power": 0.75
+    },
+    "hist_measure": "close",
+    "vol_name": "blend_60_250",
+    "evidence_holdout": {
+      "tune_held80": 0.8000100446989101,
+      "tune_held50": 0.5000251117472754,
+      "tune_width80_pct": 24.560681361007035,
+      "holdout_held80": 0.8066330716043596,
+      "holdout_held50": 0.5110746513535686,
+      "holdout_width80_pct": 25.395535864818672,
+      "worst_year": 2008,
+      "worst_year_held80": 0.575938566552901,
+      "held80_2008": 0.575938566552901,
+      "held80_2020": 0.7623590633130962,
+      "holdout_worst_year_held80": 0.7282051282051282,
+      "years_below_70pct": 2
+    }
+  },
+  "commodity_30": {
+    "candidate": "recal",
+    "calibration_all_years": {
+      "outer": 1.0480022520235222,
+      "inner": 1.0022618965387413
+    },
+    "fit": {
+      "stretch": 0.93
+    },
+    "hist_measure": "close",
+    "vol_name": "blend3",
+    "evidence_holdout": {
+      "tune_held80": 0.7999726489492638,
+      "tune_held50": 0.5000227925422802,
+      "tune_width80_pct": 26.188978753551062,
+      "holdout_held80": 0.8120798635497141,
+      "holdout_held50": 0.5178087689374937,
+      "holdout_width80_pct": 28.8503441584649,
+      "worst_year": 2008,
+      "worst_year_held80": 0.6812297734627831,
+      "held80_2008": 0.6812297734627831,
+      "held80_2020": 0.7462006079027356,
+      "holdout_worst_year_held80": 0.7462006079027356,
+      "years_below_70pct": 1
+    }
+  },
+  "commodity_90": {
+    "candidate": "recal",
+    "calibration_all_years": {
+      "outer": 1.08106958882713,
+      "inner": 1.0080043727268677
+    },
+    "fit": {
+      "stretch": 0.92
+    },
+    "hist_measure": "close",
+    "vol_name": "blend3",
+    "evidence_holdout": {
+      "tune_held80": 0.8,
+      "tune_held50": 0.5000231213872832,
+      "tune_width80_pct": 46.87503723447825,
+      "holdout_held80": 0.8098394614189539,
+      "holdout_held50": 0.520973588814086,
+      "holdout_width80_pct": 51.46518458901099,
+      "worst_year": 2008,
+      "worst_year_held80": 0.6383495145631068,
+      "held80_2008": 0.6383495145631068,
+      "held80_2020": 0.7241641337386018,
+      "holdout_worst_year_held80": 0.7241641337386018,
+      "years_below_70pct": 4
+    }
+  },
+  "crypto_30": {
+    "candidate": "close",
+    "calibration_all_years": {
+      "outer": 0.9682265818156489,
+      "inner": 0.8799190003028765
+    },
+    "fit": {
+      "shape": "mix",
+      "scale": 1.08,
+      "shape_z": [
+        -1.201462274117108,
+        -0.5740777214614119,
+        0.07906775417504192,
+        0.8464083762231109,
+        1.5200976713007341
+      ]
+    },
+    "hist_measure": "close",
+    "vol_name": "blend_60_250",
+    "evidence_holdout": {
+      "tune_held80": 0.7978723404255319,
+      "tune_held50": 0.5,
+      "tune_width80_pct": 64.64918777247057,
+      "holdout_held80": 0.8075668623613829,
+      "holdout_held50": 0.5590345727332029,
+      "holdout_width80_pct": 71.36098941461782,
+      "worst_year": 2026,
+      "worst_year_held80": 0.7083333333333334,
+      "held80_2008": NaN,
+      "held80_2020": 0.75,
+      "holdout_worst_year_held80": 0.7083333333333334,
+      "years_below_70pct": 0
+    }
+  },
+  "crypto_90": {
+    "candidate": "close",
+    "calibration_all_years": {
+      "outer": 0.9384252899175229,
+      "inner": 0.8783625559213779
+    },
+    "fit": {
+      "shape": "mix",
+      "scale": 1.14,
+      "shape_z": [
+        -1.1457410220372974,
+        -0.4609956134924078,
+        0.2828374860746298,
+        1.2566395000708674,
+        1.9222504670386513
+      ]
+    },
+    "hist_measure": "close",
+    "vol_name": "v60",
+    "evidence_holdout": {
+      "tune_held80": 0.7984496124031008,
+      "tune_held50": 0.5,
+      "tune_width80_pct": 179.2736268757797,
+      "holdout_held80": 0.8750835003340013,
+      "holdout_held50": 0.6025384101536406,
+      "holdout_width80_pct": 217.42858504051983,
+      "worst_year": 2016,
+      "worst_year_held80": 0.6986301369863014,
+      "held80_2008": NaN,
+      "held80_2020": 0.7364864864864865,
+      "holdout_worst_year_held80": 0.7364864864864865,
+      "years_below_70pct": 1
+    }
+  }
+}
